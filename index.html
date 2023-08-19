@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="./favicon/delivery_icon.svg">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body onload="renderDishes(), renderShoppingCart()">
+    <header class="header">
+            <a href="./index.html"><img src="./img/Lieferando-Logo.png" alt="Lieferando-Logo" class="header-logo"></a>
+            <input class="header-input" type="text" placeholder="Deine Adresse...">
+            <img src="./img/german_flag.png" alt="Deutsch" class="german-flag">
+    </header>
+    <div class="body">
+        <div class="body-left">
+            <img src="./img/pizza.jpg" alt="Pizza" class="pizza-img">
+            <div class="flex-container">
+                <div class="restaurant">
+                    <h2 class="restaurant-name">Restaurant Developeria</h2>
+                    <img src="./img/restaurant_info.png" alt="Restaurant Info" class="restaurant-info">
+                </div>
+                <div class="beliebte-gerichte">
+                    <h2 class="bge">Beliebte Gerichte</h2>
+                </div>
+                <div class="responsive2" id="dishcontainer"></div>
+            </div>
+        </div>
+
+        <div class="body-right">
+            <div id="shoppingcart" class="responsive1"></div>
+            <img src="./img/arrow-up.svg" alt="Warenkorb öffnen" onclick="openBasket()" id="deleteme1" class="warenkorböffnen">
+            <img src="./img/xmark.svg" alt="Warenkorb schlie0en" onclick="closeBasket()" id="deleteme2" class="d-none warenkorböffnen">
+            <p id="gesamt" class="total">Gesamt: 0€</p>
+            <div class="total-amount">
+                <button onclick="btnPay()" class="btn-pay">Bezahlen</button>
+            </div>            
+
+        </div>
+    </div>
+    
+</body>
+</html>

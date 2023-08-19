@@ -1,0 +1,388 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #FF7F01;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 32px;
+}
+
+.header-logo {
+    width: 275px;
+}
+
+.header-logo:hover {
+    cursor: pointer;
+}
+
+.header-input {
+    background-color: #FF7F01;
+    color: white;
+    outline: none;
+    width: 300px;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 5px;
+    
+}
+
+input::placeholder {
+    color: white;
+    font-weight: 500;
+}
+
+.german-flag {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.german-flag:hover {
+    cursor: pointer;
+}
+
+.body {
+    display: flex;
+}
+
+.body-left {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pizza-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.restaurant {
+    padding-left: 30px
+}
+
+.restaurant-name {
+    padding-left: 12px;
+    margin-block-end: 0;
+    margin-bottom: 4px;
+    font-size: 36px;
+}
+
+.restaurant-info {
+    padding: 0;
+    margin-left: 8px;
+}
+
+.beliebte-gerichte {
+    padding: 16px 0 16px 4px;
+}
+
+.bge {
+    margin-block-end: 0;
+    font-size: 30px;
+    margin-block-start: 0;
+    margin-left: 42px;
+}
+
+.body-right {
+    flex: 1;
+    box-shadow: 0 2px 8px 0 rgba(0 0 0 / 20%);
+}
+
+
+/* Generated Contenct */
+
+.dishcontainer {
+    width: 900px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 18px;
+    margin-left: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.dishcontainer:hover {
+    background-color: #F8F5F2;
+}
+
+.dish-details {
+    margin-left: 8px;
+    margin-right: 4px;
+}
+
+.dish-name {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin: 8px
+}
+
+.dish-description {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-left: 8px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-weight: 300;
+}
+
+.dish-price {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 8px;
+    margin-bottom: 12px;
+    margin-block-start: 0;    
+}
+
+.add-button {
+    width: 30px;
+    border-radius: 50px;
+    margin-right: 8px;
+    margin-top: 8px;
+    padding: 8px;
+    background-color: #F8F5F2;
+}
+
+.add-button:hover {
+    cursor: pointer;
+}
+
+.cart-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.css-switch {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cart-img {
+    width: 40px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.cart-header {
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 4px;
+    font-size: 24px;
+}
+
+.cart-description {
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: grey;
+}
+
+.plus-cart {
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.plus-cart:hover {
+    cursor: pointer;
+}
+
+.minus-cart {
+    width: 20px;
+}
+
+.minus-cart:hover {
+    cursor: pointer;
+}
+
+.flex-cartcontainer {
+    display: flex;
+    
+}
+
+.total-amount {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.total {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+
+.btn-pay {
+    width:  90%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: #FF7F01;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+
+.btn-pay:hover {
+    cursor: pointer;
+}
+
+.d-none {
+}
+
+.warenkorböffnen {
+    display: none;
+}
+
+
+@media (max-width: 1250px) {
+    .body-right {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        background-color: white;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        
+    }
+
+    .warenkorböffnen {
+        display: flex;
+        width: 24px;
+        margin-top: 8px;
+        margin-left: 80%;
+    }
+
+    .warenkorböffnen:hover {
+        cursor: pointer;
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    .responsive1 {
+        margin-top: 0;
+    }
+
+    .total {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-top: 8px;
+    }
+
+    .responsive-d {
+        display: none;
+    }
+
+    .cart-img {
+        margin-top: 12px;
+        margin-bottom: 16px;
+    }
+
+    .btn-pay {
+        width: 250px;
+    }
+
+    .responsive2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .dishcontainer {
+        width: 90%;
+    }
+
+    .header-input {
+        display: none;
+    }
+
+    .header {
+        margin: 0;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .header {
+        height: 100px;
+    }
+
+  .pizza-img {
+   width: 100%;
+   height: 250px
+  }
+
+  .header-logo {
+    width: 225px;
+    height: auto;
+  }
+
+  .restaurant {
+    padding-left: 0;
+  }
+
+  .restaurant-name {
+    padding: 8px;
+    font-size: 32px;
+  }
+
+  .restaurant-info {
+    margin: 0;
+    width: 90%;
+  }
+
+  .beliebte-gerichte {
+    padding: 0;
+    text-align: center;
+  }
+
+  .dishcontainer {
+    margin-left: 0;
+  }
+
+  .dish-name {
+    font-size: 20px;
+  }
+
+  .dish-description {
+    font-size: 16px;
+  }
+
+  .dish-price {
+    font-size: 20px;
+  }
+
+}
